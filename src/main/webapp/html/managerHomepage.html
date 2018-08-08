@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manager Homepage</title>
+</head>
+<body>
+
+<h1>Manager Homepage!</h1>
+<br>
+
+<div>
+<h2>Approve or Deny Reimbursement</h2>
+<input placeholder = "Reimbursement Id" name = "inputId"       id = "inputId">
+<input placeholder = "Updated Status"   name = "updatedStatus" id ="updatedStatus">
+<button onclick = "changeBursement()">Approve Or Deny</button>
+</div>
+
+<br>
+
+<div>
+<h2>View All Pending Reimbursements</h2>
+<button  onclick ="viewAllPendingBursements()">View All Pending Reimbursements</button>
+</div>
+
+<br>
+
+<div>
+<h2>View All Resolved Reimbursements</h2>
+<button onclick = "viewAllResolvedBursements()">View All Resolved Reimbursements</button>
+</div>
+
+<br>
+
+<div>
+<h2>View All Employees</h2>
+<button onclick = "viewAllEmployees()">View All Employees</button>
+</div>
+
+
+<div>
+<h2>View Reimbursements of An Employee</h2>
+<input placeholder = "Enter User Id" name = "inputUserid" id ="inputUserid">
+<button onclick = "viewEmployeeReimbursements()">View Reimbursements from Employee</button>
+
+</div>
+
+<h2>Logout</h2>
+<form method = "GET" action = "logout.do">
+<input type = "submit" value = "logout">
+</form>
+<br>
+
+
+<div id = "answerDiv">
+
+</div>
+
+<script src = "../js/managerHomepage.js" type = "text/javascript"></script>
+
+</body>
+</html>

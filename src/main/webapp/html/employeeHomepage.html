@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Homepage</title>
+</head>
+<body>
+
+<h1>Employee Homepage!</h1>
+<br>
+
+<div>
+<h2>Create a New Reimbursement</h2>
+	<input placeholder = "Reimbursement Title"       id = "bursementtitle"       name = "bursementtitle"      type = "text">
+	<input placeholder = "Reimbursement Description" id = "bursementdescription" name ="bursementdescription" type = "text">
+	<input placeholder = "Reimbursement Balance"     id = "bursementbalance"     name = "bursementbalance"    type = "number">
+	<button onclick = "createNewBursement()">Create New Reimbursement</button>
+</div>
+
+<br>
+
+<div>
+<h2>View Pending Requests</h2>
+<button onclick = "viewPendingRequests()">View Pending Requests</button>
+</div>
+
+<div>
+<h2>View Resolved Requests</h2>
+<button onclick = "viewResolvedRequests()">View Resolved Requests</button>
+</div>
+
+<div>
+<h2>View Account</h2>
+<button onclick ="viewAccount()">View Account</button>
+</div>
+
+<div>
+<h2>Update Password</h2>
+<input name = "newPassword" placeholder = "New Password" id = "newPassword">
+<button onclick = "updatePassword()">Update Password</button>
+</div>
+
+
+<h2>Logout</h2>
+<form method = "GET" action = "logout.do">
+<input type = "submit" value = "logout">
+</form>
+
+<br>
+	
+<div id = "answerDiv">
+	
+</div>
+
+<script src = "../js/employeeHomepage.js" type = "text/javascript"></script>
+
+</body>
+</html>
